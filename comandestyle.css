@@ -1,0 +1,58 @@
+.item1 { grid-area: username; }
+        .item2 { grid-area: title; }
+        .item3 { grid-area: filtri; }
+        .item4 { grid-area: main; }
+        .item5 { grid-area: add; }
+        html,body {
+            background-image: url('sfondo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin : 0px;
+        }
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            grid-template-areas:
+                ". . . . username"
+                "title . . filtri filtri"
+                "main main main main main"
+                "main main main main main"
+                "main main main main main"
+                "main main main main main"
+                "main main main main main"
+                ". . . . add";
+                grid-template-rows: 50px 50px auto auto auto auto auto 50px;
+        }
+        .grid-container > div {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black; 
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+        table
+        {
+            height: 100%;
+            width:100% ;
+        }
+        .buttontrue
+        {
+            cursor: not-allowed;
+            height:30px;
+            width:30px ;
+            background-color: green;
+            border-radius: 5px;
+        }
+        .buttonfalse
+        {
+            cursor: not-allowed;
+            height:30px;
+            width:30px ;
+            background-color: red;
+            border-radius: 5px;
+        }
+        th
+        {
+            border : 1px solid black;
+            border-radius : 5px;
+        }
